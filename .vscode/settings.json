@@ -218,5 +218,6 @@
     "doxdocgen.generic.boolReturnsTrueFalse": false,
     "doxdocgen.generic.paramTemplate": "@param {param} ",
     "doxdocgen.generic.returnTemplate": "@return",
-    "doxdocgen.generic.includeTypeAtReturn": false
+    "doxdocgen.generic.includeTypeAtReturn": false,
+    "workbench.editor.empty.hint": "hidden"
 }
