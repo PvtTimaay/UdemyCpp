@@ -40,6 +40,6 @@ int main()
 
     delete[] array2;
     array2 = nullptr;
-*/
+    */
     return 0;
 }
