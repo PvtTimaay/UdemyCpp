@@ -21,6 +21,7 @@ int main()
     delete[] array1;
     array1 = nullptr;
 
+
    /* // Exercise 2
     auto input_array_length = std::size_t{0};
     auto input_array_value = std::int32_t{0};
