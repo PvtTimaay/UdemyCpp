@@ -22,7 +22,7 @@ int main()
     array1 = nullptr;
 
 
-   /* // Exercise 2
+    // Exercise 2
     auto input_array_length = std::size_t{0};
     auto input_array_value = std::int32_t{0};
 
@@ -32,7 +32,7 @@ int main()
     std::cin >> input_array_value;
     std::cout << '\n';
 
-    auto *array2 = array_constructor(input_array_value, input_array_length);
+    auto *array2 = array_constructor(input_array_value, input_array_length); // <- Hiermit erstellst du ein Dynamisches Array, dass auf dem Heap angelegt wird!
 
     for (std::size_t i = 0; i < input_array_length; i++)
     {
@@ -41,6 +41,6 @@ int main()
 
     delete[] array2;
     array2 = nullptr;
-    */
+
     return 0;
 }

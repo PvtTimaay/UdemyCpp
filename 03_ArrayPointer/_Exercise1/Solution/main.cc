@@ -35,7 +35,7 @@ int main()
 
     for (std::size_t i = 0; i < input_array_length; i++)
     {
-        std::cout << array2[i] << '\n';
+        std::cout << array2[i]  << '\n';
     }
 
     delete[] array2;
