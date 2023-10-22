@@ -22,8 +22,8 @@ int main()
 
     // Exercise 1
     // 0 1 2 12
-    push_back(my_data, size, 12);
-    size++;
+    push_back(my_data, size++, 12);
+    //size++;
 
     std::cout << "Append value 12 at the end: " << '\n';
     for (std::uint32_t i = 0; i < size; i++)
@@ -32,8 +32,8 @@ int main()
     }
 
     // Exercise 2
-    pop_back(my_data, size);
-    size--;
+    pop_back(my_data, size--);
+    //size--;
 
     std::cout << "Remove the last value: " << '\n';
     for (std::uint32_t i = 0; i < size; i++)
