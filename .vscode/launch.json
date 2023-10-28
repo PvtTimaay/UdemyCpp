@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/tim-w/Documents/Manuelle-Dokumente/Programmieren-Tim/source/UdemyCpp/01_Intro",
-      "program": "c:/Users/tim-w/Documents/Manuelle-Dokumente/Programmieren-Tim/source/UdemyCpp/01_Intro/build/Debug/outDebug",
+      "cwd": "c:/Users/tim-w/Documents/Manuelle-Dokumente/Programmieren-Tim/source/UdemyCpp/ComputerGame5",
+      "program": "c:/Users/tim-w/Documents/Manuelle-Dokumente/Programmieren-Tim/source/UdemyCpp/ComputerGame5/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
