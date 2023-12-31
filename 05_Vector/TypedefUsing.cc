@@ -13,7 +13,7 @@ struct PlayerData
 // typedef std::vector<PlayerData> AllPlayerData;
 
 // C++-Approach
-using AllPlayerData = std::vector<PlayerData>;
+using AllPlayerData = std::vector<PlayerData>; //NOTE es ist dafür gedacht um code übersichtlicher zu machen
 
 int main()
 {
