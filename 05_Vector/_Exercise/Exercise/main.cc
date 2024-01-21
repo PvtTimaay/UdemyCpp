@@ -10,8 +10,7 @@ void printMatrix(const MatrixT &matrix)
     {
         for (std::size_t j = 0; j != matrix[i].size(); ++j)
         {
-            std::cout << "m[" << i << ", " << j << "] = " << matrix[i][j]
-                      << '\n';
+            std::cout << "m[" << i << ", " << j << "] = " << matrix[i][j] << '\n';
         }
     }
     std::cout << '\n';
@@ -29,6 +28,17 @@ void printVector(const VectorT &vec)
 int main()
 {
     // Exercise 1
+    //auto matrix = std::vector<std::vector<double>>(3, std::vector<double>(3, 0));
+
+    auto matrix = MatrixT(3, VectorT(3, 0));
+    for (size_t i = 0; i != matrix.size(); ++i)
+    {
+        for (size_t j = 0; j != matrix[i].size(); ++j)
+        {
+            matrix[i][j] = static_cast<double>(i + j);
+        }
+    }
+
 
     std::cout << "Exercise 1:\n";
     printMatrix(matrix);
