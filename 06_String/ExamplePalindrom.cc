@@ -3,8 +3,8 @@
 
 bool is_palindrom(std::string_view text)
 {
-    const auto reversed = std::string(text.rbegin(), text.rend());
-
+    //const auto reversed = std::string(text.rbegin(), text.rend());
+    const std::string reversed = std::string(text.rbegin(), text.rend());
     return text == reversed;
 }
 
