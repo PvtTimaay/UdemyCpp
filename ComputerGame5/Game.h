@@ -6,6 +6,8 @@ struct Coordinate
 {
     std::uint32_t x;
     std::uint32_t y;
+
+Coordinate(auto x, auto y) { this-> x = x,  this-> y = y;}
 };
 
 enum class ConsoleInput

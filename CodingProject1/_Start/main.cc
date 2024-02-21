@@ -7,7 +7,7 @@
 int main()
 {
     auto fill_value = 1.0;
-    auto length = std::size_t{5};
+    auto length = std::size_t{6};
 
     auto my_array = create_dynamic_array(fill_value, length);
 
@@ -15,6 +15,7 @@ int main()
     {
         my_array.m_data[i] = static_cast<double>(i);
     }
+    my_array.m_data[5] = 6;
 
     std::cout << "Mean = " << mean(my_array) << '\n';
     std::cout << "Median = " << median(my_array) << '\n';

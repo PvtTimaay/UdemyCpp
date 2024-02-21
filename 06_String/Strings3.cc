@@ -14,11 +14,11 @@ int main()
     std::cout << "text3: " << text3 << '\n';
 
     auto text4 = text3;
-    text4.append({' ', ',', 'F', 'u', 'e', 'n', 'f'});
+    text4.append({',', ' ', 'F', 'u', 'e', 'n', 'f'});
     std::cout << "text4: " << text4 << '\n';
 
     auto s1 = std::string{"Jann"};
-    auto s2 = std::string{"Jan"};
+    auto s2 = std::string{"Janx"};
     std::cout << "s1 == s2: " << std::boolalpha << (s1 == s2) << '\n';
     const auto comapared = s1.compare(s2);
     std::cout << "s1.comapre(s2): " << comapared << '\n';
@@ -28,8 +28,9 @@ int main()
     if (idx != std::string::npos)
         s1.replace(idx, 2, "n");
 
-    const auto sub_str = s1.substr(2, 3);
+    const auto sub_str = s1.substr(1, 3);
     std::cout << sub_str << '\n';
+    std::cout << s1 << std::endl;
 
     return 0;
 }

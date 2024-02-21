@@ -5,11 +5,16 @@
 
 namespace
 {
+
+
+
 constexpr static auto LEN_X = 5U;
 constexpr static auto LEN_Y = 5U;
-constexpr static auto START = Coordinate{.x = 0, .y = 0};
-constexpr static auto GOAL = Coordinate{.x = LEN_X - 1, .y = LEN_Y - 1};
-}; // namespace
+/*constexpr static auto START = Coordinate{.x = 0, .y = 0};*/
+auto GOAL = Coordinate(LEN_X - 1, LEN_Y - 1);
+Coordinate START (0,0);
+}
+// namespace
 
 bool is_finished(const Coordinate &player)
 {
@@ -26,8 +31,7 @@ void print_game_state(const Coordinate &player)
             {
                 std::cout << 'P';
             }
-            else if ((i == GOAL.x && j == GOAL.y) ||
-                     (i == START.x && j == START.y))
+            else if ((i == GOAL.x && j == GOAL.y) || (i == START.x && j == START.y))
             {
                 std::cout << '|';
             }
