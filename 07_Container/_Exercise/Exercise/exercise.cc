@@ -22,7 +22,7 @@ std::string_view get_oldest_friend(const Friends &friends)
 
 std::string_view get_heaviest_friend(const Friends &friends)
 {
-    std::string_view tempFriend = "";
+    std::string_view tempFriend {""};
     int tempHeavy = 0;
 
     for (const auto &item : friends)
