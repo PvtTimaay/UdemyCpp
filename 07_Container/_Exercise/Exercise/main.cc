@@ -10,9 +10,14 @@
 int main()
 {
     // Exercise 1
-    auto friends = Friends{};
+    auto aliasFriends = Friends{};
+    std::map<std::string, std::pair<std::int32_t, std::int32_t>> friends;
+    friends["Hans"] = std::make_pair(70, 80);
+    friends["Harald"] = std::make_pair(72, 81);
+    friends["Muecke"] = std::make_pair(55, 90);
 
     // ...
+
 
     // Exercise 2
     const auto oldest_friend = get_oldest_friend(friends);
