@@ -4,6 +4,7 @@
 #include <string>
 #include <tuple>
 #include <utility>
+#include <ranges>
 
 #include "exercise.h"
 
@@ -15,7 +16,6 @@ int main()
     friends["Hans"] = std::make_pair(70, 80);
     friends["Harald"] = std::make_pair(72, 81);
     friends["Muecke"] = std::make_pair(55, 90);
-
     // ...
 
 

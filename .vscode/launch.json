@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/tim-w/Documents/ManuelleDatenLaptop/ProgrammierenTimLaptop/UdemyCpp/05_Vector/_Exercise/Exercise",
-      "program": "c:/Users/tim-w/Documents/ManuelleDatenLaptop/ProgrammierenTimLaptop/UdemyCpp/05_Vector/_Exercise/Exercise/build/Debug/outDebug",
+      "cwd": "c:/Users/tim-w/Documents/Manuelle-Dokumente/Programmieren-Tim/source/UdemyCpp/08_STL",
+      "program": "c:/Users/tim-w/Documents/Manuelle-Dokumente/Programmieren-Tim/source/UdemyCpp/08_STL/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
