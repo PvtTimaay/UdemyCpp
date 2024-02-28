@@ -8,13 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-<<<<<<< HEAD
       "cwd": "c:/Users/tim-w/Documents/Manuelle-Dokumente/Programmieren-Tim/source/UdemyCpp/08_STL",
       "program": "c:/Users/tim-w/Documents/Manuelle-Dokumente/Programmieren-Tim/source/UdemyCpp/08_STL/build/Debug/outDebug",
-=======
-      "cwd": "c:/Users/tim-w/Documents/ManuelleDatenLaptop/ProgrammierenTimLaptop/UdemyCpp/ComputerGame6",
-      "program": "c:/Users/tim-w/Documents/ManuelleDatenLaptop/ProgrammierenTimLaptop/UdemyCpp/ComputerGame6/build/Debug/outDebug",
->>>>>>> ada7c98d6715ddd7d3dfcab74b7f2fd9095ad7f4
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
