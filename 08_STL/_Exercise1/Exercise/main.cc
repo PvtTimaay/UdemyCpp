@@ -52,15 +52,26 @@ int main()
     start = ClockType::now();
     const auto result_exercise2 = smart_shuffle_till_equal(target, input);
     end = ClockType::now();
-    elapsed_milliseconds =
+    auto elapsed_milliseconds1 =
         std::chrono::duration_cast<std::chrono::microseconds>(end - start)
             .count() /
         1000.0;
-    std::cout << '\n' << "Time for exercise 2 in ms: " << elapsed_milliseconds;
+    std::cout << '\n' << "Time for exercise 2 in ms: " << elapsed_milliseconds1;
     const auto is_equal3 = std::equal(result_exercise2.begin(),
                                       result_exercise2.end(),
                                       target.begin());
     std::cout << '\n' << "Vectors are equal: " << is_equal3 << '\n';
+
+    static int tempVar{0};
+    while (elapsed_milliseconds < elapsed_milliseconds1)
+    {
+        shuffle_till_equal(target, input);
+        smart_shuffle_till_equal(target, input);
+        tempVar++;
+    }
+    std::cout << "\nTimVersuche: " << tempVar << "\n";
+
+
 
     return 0;
 }

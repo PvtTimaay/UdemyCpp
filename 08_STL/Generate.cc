@@ -29,6 +29,5 @@ int main()
     const auto elapsed_time =
         std::chrono::duration_cast<ClockRes>(end_time - start_time).count();
     std::cout << "Elapsed time: " << elapsed_time << '\n';
-
     return 0;
 }
