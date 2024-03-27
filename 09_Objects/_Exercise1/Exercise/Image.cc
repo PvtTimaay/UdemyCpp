@@ -109,12 +109,21 @@ void Image::set_pixel(const std::uint32_t x,
 // Exercise 1
 void Image::clear_image()
 {
+    for (auto &Zeile : m_matrix)
+    {
+        for (auto &Spalte : Zeile)
+        {
+            Spalte = 0;
+        }
+    }
 }
 
 // Exercise 2
 void Image::resize_image(const std::uint32_t new_width,
                          const std::uint32_t new_height)
 {
+    m_width = new_width;
+    m_height = new_height;
 }
 
 // Exercise 3

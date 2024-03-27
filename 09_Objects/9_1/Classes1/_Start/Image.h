@@ -4,7 +4,7 @@ class Image
 {
     public:
 
-        Image(int heigth, int weidth);
+        Image(int heigth, int weidth); //NOTE constructor
 
     private:
 
