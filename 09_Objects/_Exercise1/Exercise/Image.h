@@ -29,11 +29,7 @@ public:
     // Exercise 3
     void fill_image(const std::uint8_t value);
     // Exercise 4
-    void draw_line(const std::uint32_t x1,
-                   const std::uint32_t y1,
-                   const std::uint32_t x2,
-                   const std::uint32_t y2,
-                   const std::uint8_t value);
+    void draw_line(const std::uint32_t x1, const std::uint32_t y1, const std::uint32_t x2, const std::uint32_t y2, const std::uint8_t value);
 
 private:
     std::uint32_t m_width;
