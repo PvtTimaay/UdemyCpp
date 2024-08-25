@@ -29,6 +29,7 @@
     ".clang*": "yaml",
     "*.hpp.in": "cpp",
     "*.in": "cpp",
+<<<<<<< HEAD
     "any": "cpp",
     "array": "cpp",
     "atomic": "cpp",
@@ -98,6 +99,9 @@
     "typeinfo": "cpp",
     "valarray": "cpp",
     "variant": "cpp"
+=======
+    "ranges": "cpp"
+>>>>>>> 926cbdcb22df80c766325f3cb8c7642b3b03210a
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,

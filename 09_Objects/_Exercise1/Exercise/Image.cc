@@ -109,33 +109,99 @@ void Image::set_pixel(const std::uint32_t x,
 // Exercise 1
 void Image::clear_image()
 {
-    for (auto &Zeile : m_matrix)
-    {
-        for (auto &Spalte : Zeile)
-        {
-            Spalte = 0;
-        }
-    }
+    m_matrix.clear();
+    m_width = 0;
+    m_height = 0;
 }
 
 // Exercise 2
 void Image::resize_image(const std::uint32_t new_width,
                          const std::uint32_t new_height)
 {
-    m_width = new_width;
-    m_height = new_height;
+    if (new_width != m_width)
+    {
+        m_matrix.resize(new_width);
+        m_width = new_width;
+    }
+    else if (new_height != m_height)
+    {
+        for (auto &innerVec : m_matrix)
+        {
+            innerVec.resize(new_height);
+        }
+
+        m_height = new_height;
+    }
 }
 
 // Exercise 3
 void Image::fill_image(const std::uint8_t value)
 {
+    /*for (auto &Zeile : m_matrix) //NOTE <<-- gleiches Ergebnis aber weniger Effizient als std::fill()
+    {
+        for (auto &Spalte : Zeile)
+        {
+            Spalte = value;
+        }
+    }*/
+    for (auto &col : m_matrix)
+    {
+        std::fill(col.begin(), col.end(), value);
+    }
 }
 
 // Exercise 4
-void Image::draw_line(const std::uint32_t x1,
-                      const std::uint32_t y1,
-                      const std::uint32_t x2,
-                      const std::uint32_t y2,
-                      const std::uint8_t value)
+void Image::draw_line(const std::uint32_t x1, const std::uint32_t y1, const std::uint32_t x2, const std::uint32_t y2, const std::uint8_t value)
 {
+    int length = 0;
+
+    if ((x1 < m_width) && (x2 < m_width) && (y1 < m_height) &&
+        (y2 < m_height) && ((x1 == x2) || (y1 == y2)))
+    {
+        // Draw vertical line
+        if (x1 == x2)
+        {
+            if (y1 < y2)
+            {
+                length = y2 - y1;
+                for (int i = 0; i != length; ++i)
+                {
+                    set_pixel(x1, y1 + i, value);
+                }
+            }
+            else
+            {
+                length = y1 - y2;
+                for (int i = 0; i != length; ++i)
+                {
+                    set_pixel(x1, y2 + i, value);
+                }
+            }
+        }
+        // Draw horizontal line
+        else if (y1 == y2)
+        {
+            if (x1 < x2)
+            {
+                length = x2 - x1;
+                for (int i = 0; i != length; ++i)
+                {
+                    set_pixel(x1 + i, y1, value);
+                }
+            }
+            else
+            {
+                length = x1 - x2;
+                for (int i = 0; i != length; ++i)
+                {
+                    set_pixel(x2 + i, y1, value);
+                }
+            }
+        }
+    }
+    else
+    {
+        std::cout << "Line Error" << '\n';
+        std::cout << x1 << " " << y1 << " " << x2 << " " << y2 << " " << '\n';
+    }
 }
