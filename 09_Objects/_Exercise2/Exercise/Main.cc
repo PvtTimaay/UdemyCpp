@@ -13,7 +13,7 @@ int main()
     auto m3 = m1 * 2;
     m3.print_matrix();
 
-    m3 = m3 / m2;
+    m3 = m3 / 2;
     m3.print_matrix();
 
     return 0;
