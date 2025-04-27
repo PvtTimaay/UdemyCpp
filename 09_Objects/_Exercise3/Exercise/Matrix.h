@@ -57,12 +57,26 @@ Matrix<T>::Matrix(const T &A, const T &B, const T &C, const T &D)
 template <typename T>
 Matrix<T>::Matrix(const Matrix<T> &other)
 {
+    m_A = other.get_A();
+    m_B = other.get_B();
+    m_C = other.get_C();
+    m_D = other.get_D();
+    std::cout << "Copy Constructor called\n";
 }
 
 // Copy Assignment Operator
 template <typename T>
 Matrix<T> &Matrix<T>::operator=(const Matrix<T> &other)
 {
+    if (this != &other)
+    {
+        m_A = other.get_A();
+        m_B = other.get_B();
+        m_C = other.get_C();
+        m_D = other.get_D();
+        std::cout << "Copy Assignment Operator called\n";
+    }
+    return *this;
 }
 
 template <typename T>

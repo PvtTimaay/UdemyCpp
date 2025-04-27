@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/tim-w/Documents/ManuelleDatenLaptop/ProgrammierenTimLaptop/UdemyCpp/09_Objects/9_1/Matrix",
-      "program": "c:/Users/tim-w/Documents/ManuelleDatenLaptop/ProgrammierenTimLaptop/UdemyCpp/09_Objects/9_1/Matrix/build/Debug/outDebug",
+      "cwd": "c:/Users/tim-w/Documents/ManuelleDatenLaptop/ProgrammierenTimLaptop/UdemyCpp/CodingProject3/_Start",
+      "program": "c:/Users/tim-w/Documents/ManuelleDatenLaptop/ProgrammierenTimLaptop/UdemyCpp/CodingProject3/_Start/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
